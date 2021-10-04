@@ -79,15 +79,15 @@ img {
 /* Lezioni */
 
   .row {
-    width: auto;
-    
+    width: 80%;
   }
 
   #lezioni .row>.left,
   #lezioni .row>.right {
     float: none;
-    width: auto;
+    width: 100%;
     margin-bottom: 20px;
+    margin: auto;
   }
 
 
@@ -97,8 +97,9 @@ img {
   #steps .row>.central,
   #steps .row>.right {
   float: none;
-  width: auto;
+  width: 100%;
   margin-bottom: 20px;
+  margin: auto;
 }
 
 .row {
@@ -122,6 +123,10 @@ img {
   height: 80px;
 }
 
-
+body {
+  margin: 0;
+  padding: 0;
+  
+}
 
 }
