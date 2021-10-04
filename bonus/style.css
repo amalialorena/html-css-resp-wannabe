@@ -1,0 +1,198 @@
+.row {
+  width: 992px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+}
+
+/* BLOCCO LEZIONI */
+#lezioni .row>.left,
+#lezioni .row>.right {
+  width: 50%;
+  float: left;
+}
+
+#lezioni .row img {
+  /* per centrare orizzontalmente */
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#lezioni {
+  text-align: center;
+}
+
+/* BLOCCO STEPS */
+#steps .row>.left,
+#steps .row>.central,
+#steps .row>.right {
+  float: left;
+  width: 33%;
+}
+
+#steps {
+  text-align: center;
+}
+
+/* BLOCCO PERCHE */
+#why {
+  text-align: center;
+}
+
+#why .row>.first,
+#why .row>.second,
+#why .row>.third {
+  width: 100%;
+  margin-top: 80px;
+}
+
+#why .row img {
+  background-color: #428bca;
+  border-radius: 50%;
+  padding: 30px;
+}
+
+/* COMMON */
+.row::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.container.grey {
+  background-color: #f9f9f9;
+}
+
+img {
+  height: 200px;
+}
+
+.clear {
+  clear: both;
+}
+
+/* Mobile */
+
+@media (max-width: 420px) {
+
+/* Lezioni */
+
+  .row {
+    width: 95%;
+    margin-top: 0;  
+  }
+
+  #lezioni .row>.left,
+  #lezioni .row>.right {
+    width: 100%;
+    margin-bottom: 20px;
+    margin: auto;
+  }
+
+
+  /* Come funziona/ steps */
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right {
+    width: 100%;
+    margin-bottom: 20px;
+    margin: auto;
+  }
+
+  #lezioni .row>.right {
+    margin-top: 30px;
+  }
+
+  #steps .row .central {
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+
+  #steps.container.grey {
+    margin-top:30px;
+  }
+
+  /* Why  */
+
+  #why .row img {
+    height: 50px;
+  }
+
+  #why .row>.first,
+  #why .row>.second,
+  #why .row>.third {
+    margin-top: 30px;
+  }
+
+  #why {
+    padding-bottom: 30px;
+  }
+
+  /* Generali */
+  
+  img {
+    height: 80px;
+  }
+
+  body {
+    margin: 0;
+    padding: 0; 
+  }
+ 
+}
+
+
+
+/* tablet */
+
+@media all and (max-width: 1024px) {
+  
+/* Lezioni */
+  #lezioni .row>.left {
+    padding-right: 20px;
+  }
+
+  #lezioni .row>.right {
+    padding-left: 20px;
+  }
+
+  #lezioni .row h1,
+  #steps .row h1 {
+    margin-bottom: 50px;
+  }
+  
+/* Steps */
+  
+  #steps .row>.central{
+    padding: 0 5px;
+  }
+
+  #steps .row>.left {
+    padding-right: 10px;
+  }
+  #steps .row>.right{
+    padding-left: 10px;
+  }
+
+  #why {
+    padding-bottom: 30px;
+  }
+  
+  /* Generali */
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  img {
+    height: auto;
+    height: 100px;
+    
+  }
+
+  .row {
+    width: 90%;
+  }
+}
