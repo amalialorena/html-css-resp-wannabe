@@ -74,9 +74,9 @@ img {
 
 /* Mobile */
 
-/* Lezioni */
-
 @media (max-width: 420px) {
+
+/* Lezioni */
 
   .row {
     width: auto;
@@ -87,15 +87,41 @@ img {
   #lezioni .row>.right {
     float: none;
     width: auto;
+    margin-bottom: 20px;
   }
 
-  /* Come funziona */
+
+  /* Come funziona/ steps */
 
   #steps .row>.left,
-#steps .row>.central,
-#steps .row>.right {
+  #steps .row>.central,
+  #steps .row>.right {
   float: none;
   width: auto;
+  margin-bottom: 20px;
 }
+
+.row {
+  margin-top: 0;  
+}
+
+/* Why  */
+
+#why .row img {
+  height: 50px;
+}
+
+#why .row>.first,
+#why .row>.second,
+#why .row>.third {
+  margin-top: 30px;
+}
+
+/* Generali */
+img {
+  height: 80px;
+}
+
+
 
 }
